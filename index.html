@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Portfolio - Web Developer showcasing projects, skills, and expertise">
+    <meta name="keywords" content="web developer, portfolio, frontend developer, HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    <title>JAHASH | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons (using CDN for social media icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Homepage / Introduction Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image-wrapper fade-in">
+                    <img src="p.jpg" alt="Profile Photo" class="profile-photo" loading="eager">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title slide-in-left">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Shaik Jahash Ahmed</span>
+                    </h1>
+                    <p class="hero-tagline slide-in-right">
+                        <span class="typing-text">Full Stack Web Developer</span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="hero-intro fade-in-up">
+                        Passionate web developer with expertise in creating responsive,
+                        user-friendly applications. Specialized in HTML, CSS, JavaScript,
+                        and modern web technologies. I transform ideas into engaging digital experiences.
+                    </p>
+                    <div class="hero-cta fade-in-up">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#projects" aria-label="Scroll to projects">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">A collection of my recent work and personal projects</p>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody" class="modal-body">
+                <!-- Modal content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h4>React</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git & GitHub</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Soft Skills & Workflow</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Responsive Design</h4>
+                            <p>Mobile-first approach for all devices</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>UI/UX Design</h4>
+                            <p>User-centered design principles</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h4>Performance</h4>
+                            <p>Optimized for speed and efficiency</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Code</h4>
+                            <p>Maintainable and scalable solutions</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Collaboration</h4>
+                            <p>Team player with strong communication</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Problem Solving</h4>
+                            <p>Creative solutions to complex challenges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated web developer with a passion for creating beautiful,
+                        functional websites and web applications. My journey in web development
+                        started with curiosity and has evolved into a career focused on crafting
+                        exceptional digital experiences.
+                    </p>
+                    <p>
+                        I specialize in front-end development but also enjoy working with
+                        back-end technologies. I'm constantly learning and staying up-to-date
+                        with the latest web technologies and best practices.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me contributing to open-source projects,
+                        writing technical blogs, or exploring new frameworks and tools.
+                    </p>
+                </div>
+                <div class="timeline">
+                    <h3>My Journey</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2027</div>
+                        <div class="timeline-content">
+                            <h4>Senior Web Developer</h4>
+                            <p>Leading projects and mentoring junior developers</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-content">
+                            <h4>Web Developer</h4>
+                            <p>Built multiple client projects and enhanced skills</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h4>Started Web Development</h4>
+                            <p>Began learning HTML, CSS, and JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What clients say about my work</p>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonials will be inserted here by JavaScript -->
+                </div>
+                <button class="carousel-btn carousel-prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'm always open to discussing new projects and opportunities</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="shaikjahashahmed9@gmail.com">shaikjahashahmed9@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:8639917686">+91 8639917686</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>KURNOOL,INDIA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/CodewithAhmed0309" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shaik-jahash-ahmed-1570ab324" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                    <div class="resume-download">
+                        <a href="Shaik_Jahash_Ahmed_Resume.pdf" download class="btn btn-secondary">
+                            Download Resume (PDF)
+                        </a>
+
+                        
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Your Name. All rights reserved.</p>
+            <p>Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox for Images -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="" alt="Lightbox image">
+        <button class="lightbox-prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
